@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bbb" translatesAutoresizingMaskIntoConstraints="NO" id="sww-XI-nPc">
+                                <rect key="frame" x="-90" y="-283" width="555" height="1379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lotería Mexicana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bj-Xj-N3w">
+                                <rect key="frame" x="40" y="115" width="295" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige un modo de juego:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwh-Uk-alz">
+                                <rect key="frame" x="49.333333333333343" y="560" width="276.66666666666663" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv8-oI-Fk1">
+                                <rect key="frame" x="132" y="620" width="112" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="     Gritón     ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="GritónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ec-HP-irZ"/>
+                                    <segue destination="7XU-w7-uLN" kind="show" id="fPO-XZ-X9o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-Um-UKA">
+                                <rect key="frame" x="130" y="676" width="115" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="   Jugador   ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VH-NH-t2z"/>
+                                    <segue destination="SsR-4b-YoD" kind="show" id="opK-tq-FId"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creado por: Ariel Salazar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-dr-3qt">
+                                <rect key="frame" x="92" y="166" width="190" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="fgP-NP-wp8">
+                                <rect key="frame" x="90" y="236" width="195" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35350910258304913" green="0.80591687817258884" blue="0.47682380419483872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hwh-Uk-alz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2M-3Z-wdq"/>
+                            <constraint firstItem="Hwh-Uk-alz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="168" id="lW3-vY-Vfm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Gritón" destination="pv8-oI-Fk1" id="Nxv-dO-KdV"/>
+                        <outlet property="Jugador" destination="8rM-Um-UKA" id="cvU-MF-czw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+        <!--Jugador View Controller-->
+        <scene sceneID="PR4-Ry-yZ0">
+            <objects>
+                <viewController id="SsR-4b-YoD" customClass="JugadorViewController" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zq1-BZ-nv2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bbb" translatesAutoresizingMaskIntoConstraints="NO" id="BsT-8x-6u6">
+                                <rect key="frame" x="-90" y="-283" width="555" height="1379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has elejido Jugador como tu modo de juego." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-gN-tl5">
+                                <rect key="frame" x="35" y="85" width="306" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neb-Ad-mrq">
+                                <rect key="frame" x="57" y="236" width="54" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="A1Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="hfU-g4-UuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-rK-ZLx">
+                                <rect key="frame" x="125" y="236" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="A2Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="dsv-p2-eQw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txB-lK-Yuy">
+                                <rect key="frame" x="193" y="236" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="A3Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="Ymb-3Y-uBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBP-xS-Xok">
+                                <rect key="frame" x="262" y="236" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="A4Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="JQL-lm-9AF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pI-nw-Wxy">
+                                <rect key="frame" x="57" y="323" width="54" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="B1Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="e6c-t6-VN6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7n-Y1-7yj">
+                                <rect key="frame" x="125" y="323" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="B2Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="TLc-2A-fya"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3O-B1-Tid">
+                                <rect key="frame" x="193" y="323" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="B3Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="mSU-5F-46J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-9c-Lqq">
+                                <rect key="frame" x="262" y="323" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="B4Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="9iR-b6-VIo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAx-tD-bRa">
+                                <rect key="frame" x="57" y="410" width="54" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="C1Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="jGz-Sv-bWQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LH4-2A-phc">
+                                <rect key="frame" x="125" y="410" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="C2Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="7v1-Wp-22h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbq-hr-UHN">
+                                <rect key="frame" x="193" y="410" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="C3Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="lk0-35-hNT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-UG-IgH">
+                                <rect key="frame" x="262" y="410" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="C4Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="ftL-lh-GzV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-R7-hWl">
+                                <rect key="frame" x="57" y="497" width="54" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="D1Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="6MU-Xe-aFh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zE-CS-6rb">
+                                <rect key="frame" x="125" y="497" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="D2Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="eNH-Qy-eCi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZq-c0-hau">
+                                <rect key="frame" x="193" y="497" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="D3Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="iTG-uR-1KJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYu-Ea-Mbj">
+                                <rect key="frame" x="262" y="497" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="0"/>
+                                <connections>
+                                    <action selector="D4Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="8Jx-Lb-51L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genera una tabla y presiona &quot;seleccionar&quot; para seleccionarla y empezar a jugar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P09-B6-OHg">
+                                <rect key="frame" x="16" y="165" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-EZ-9An">
+                                <rect key="frame" x="55" y="620" width="120" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="     Generar     ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="GenerarButton:" destination="SsR-4b-YoD" eventType="touchUpInside" id="fvN-8h-t6L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my7-3L-c7X">
+                                <rect key="frame" x="193" y="620" width="129" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="  Seleccionar  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SeleccionarButton:" destination="SsR-4b-YoD" eventType="touchUpInside" id="7zF-PY-XTG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64d-ny-9GS">
+                                <rect key="frame" x="96" y="665" width="182" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="   Menú Principal   ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHG-HZ-TTl"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="l2g-1M-FCM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCd-Up-Rnf">
+                                <rect key="frame" x="16" y="110" width="343" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Tu objetivo: debes generar una tabla y marcar las cartas extraídas solamente cuando el Gritón las anuncie. Ganas cuando marcas TODA tu tabla y gritas "¡lotería!" ¡Suerte!</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38881295919418335" green="0.81025069952011108" blue="0.47962355613708496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nX8-SG-v9d"/>
+                    </view>
+                    <connections>
+                        <outlet property="A1" destination="neb-Ad-mrq" id="MDC-J0-yRK"/>
+                        <outlet property="A2" destination="RQO-rK-ZLx" id="hYp-wd-gKX"/>
+                        <outlet property="A3" destination="txB-lK-Yuy" id="XqF-MC-dVg"/>
+                        <outlet property="A4" destination="nBP-xS-Xok" id="QwG-R9-OIr"/>
+                        <outlet property="B1" destination="2pI-nw-Wxy" id="jkh-hj-95M"/>
+                        <outlet property="B2" destination="E7n-Y1-7yj" id="JyS-ba-86h"/>
+                        <outlet property="B3" destination="w3O-B1-Tid" id="dyV-ya-TCp"/>
+                        <outlet property="B4" destination="JbQ-9c-Lqq" id="5pG-Z7-lro"/>
+                        <outlet property="C1" destination="yAx-tD-bRa" id="bNB-7X-Ljo"/>
+                        <outlet property="C2" destination="LH4-2A-phc" id="R3x-rh-7H4"/>
+                        <outlet property="C3" destination="cbq-hr-UHN" id="Hgv-85-zeG"/>
+                        <outlet property="C4" destination="hbe-UG-IgH" id="712-ff-8xw"/>
+                        <outlet property="D1" destination="YNm-R7-hWl" id="z2j-7d-ehw"/>
+                        <outlet property="D2" destination="5zE-CS-6rb" id="bUB-HP-VOM"/>
+                        <outlet property="D3" destination="aZq-c0-hau" id="T7H-fl-ONC"/>
+                        <outlet property="D4" destination="NYu-Ea-Mbj" id="VZw-0J-Sut"/>
+                        <outlet property="Generar" destination="5eQ-EZ-9An" id="a1b-W9-n5B"/>
+                        <outlet property="MenúPrincipal" destination="64d-ny-9GS" id="Coe-3y-Flm"/>
+                        <outlet property="ObjetivoJugador" destination="eCd-Up-Rnf" id="2AC-Mi-RHT"/>
+                        <outlet property="Seleccionar" destination="my7-3L-c7X" id="X2f-hy-LfW"/>
+                        <outlet property="promptLabel" destination="P09-B6-OHg" id="EyP-6M-8bk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Py4-fH-Z14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727.20000000000005" y="765.51724137931035"/>
+        </scene>
+        <!--Grito n View Controller-->
+        <scene sceneID="QCN-XN-8f4">
+            <objects>
+                <viewController id="7XU-w7-uLN" customClass="Grito_nViewController" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qY-mp-dck">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bbb" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-wT-iMw">
+                                <rect key="frame" x="-90" y="-283" width="555" height="1379"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nF-Bd-hq2">
+                                <rect key="frame" x="118" y="613" width="142" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="          Detrás          ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DetrásButton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="N6d-Bz-qhd"/>
+                                    <action selector="GritónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKe-0T-ZHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNU-Gg-F20">
+                                <rect key="frame" x="118" y="655" width="141" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="       Siguiente       ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTh-OT-h2Y"/>
+                                    <action selector="SiguienteBotton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="ien-lV-b2P"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="RGE-go-cOR">
+                                <rect key="frame" x="88" y="275" width="203" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9S-GC-I82">
+                                <rect key="frame" x="115" y="697" width="146" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="  Menú Principal  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEW-3a-evm"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="4x2-Ma-LIM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has elejido Gritón como tu modo de juego." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DP-OU-yDl">
+                                <rect key="frame" x="42" y="91" width="291" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGK-XB-Sml">
+                                <rect key="frame" x="16" y="116" width="343" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Tu objetivo: tienes 54 cartas. Debes gritar el nombre de la carta que aparezca. Dale al botón de "siguiente" para la siguiente carta y la de "detrás" para la previa. Para empezar el juego, dale al botón de "empezar". ¡Disfruta del juego!</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48O-38-3Ud">
+                                <rect key="frame" x="125" y="225" width="128" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="   Empezar   ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmpezarButton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="QdE-8n-5RJ"/>
+                                    <action selector="GritónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQR-pF-HXH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38881295919418335" green="0.81025069952011108" blue="0.47962355613708496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8uM-Uw-voC"/>
+                    </view>
+                    <connections>
+                        <outlet property="CardPlaceholder" destination="RGE-go-cOR" id="jdE-Ow-gdf"/>
+                        <outlet property="Detras" destination="8nF-Bd-hq2" id="0pm-aK-wHI"/>
+                        <outlet property="Empezar" destination="48O-38-3Ud" id="fas-zv-LMs"/>
+                        <outlet property="MenuPrincipal" destination="N9S-GC-I82" id="aoH-jk-Ohg"/>
+                        <outlet property="ObjetivoGritón" destination="aGK-XB-Sml" id="Bqu-U3-Keo"/>
+                        <outlet property="Siguiente" destination="JNU-Gg-F20" id="heG-Ic-zHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6g2-rR-OAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="-718.22660098522169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="536" height="789"/>
+        <image name="1" width="302" height="475"/>
+        <image name="bbb" width="536" height="789"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="l2g-1M-FCM"/>
+    </inferredMetricsTieBreakers>
+</document>
