@@ -28,11 +28,12 @@ class JugadorViewController: UIViewController {
     @IBOutlet weak var D3: UIButton!
     @IBOutlet weak var D4: UIButton!
     
+    
+    @IBOutlet weak var ObjetivoJugador: UILabel!
+    @IBOutlet weak var promptLabel: UILabel!
     @IBOutlet weak var Generar: UIButton!
     @IBOutlet weak var Seleccionar: UIButton!
     @IBOutlet weak var MenúPrincipal: UIButton!
-    @IBOutlet weak var ObjetivoJugador: UILabel!
-    @IBOutlet weak var promptLabel: UILabel!
     
     var numbers: [Int] = []
     var tableSequence: [Int] = []
@@ -46,6 +47,7 @@ class JugadorViewController: UIViewController {
     var timerBean = Timer()
     var timerNoBean = Timer()
     var object: UIButton?
+    var language: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,16 +68,37 @@ class JugadorViewController: UIViewController {
             print(error)
         }
         
+        if language == 1{
+            ObjetivoJugador.text = "Game Mode: Player\nYour objective: you must generate a table and mark the cards drawn only when the Shouter announces them. You win the game when you mark your entire table and shout \"Lotería!\" Good luck!"
+            promptLabel.text = "Generate a table and press \"select\" to start to play."
+            Generar.setTitle("Generate", for: .normal)
+            Seleccionar.setTitle("Select", for: .normal)
+            MenúPrincipal.setTitle("Main Menu", for: .normal)
+        }
+        else{
+            ObjetivoJugador.text = "Modo de Juego: Jugador\nTu objetivo: debes generar una tabla y marcar las cartas extraídas solamente cuando el Gritón las anuncie. Ganas cuando marcas TODA tu tabla y gritas \"¡lotería!\" ¡Suerte!"
+            promptLabel.text = "Genera una tabla y presiona \"seleccionar\" para empezar a jugar."
+            Generar.setTitle("Generar", for: .normal)
+            Seleccionar.setTitle("Seleccionar", for: .normal)
+            MenúPrincipal.setTitle("Menú Principal", for: .normal)
+        }
+        
         Generar.layer.borderWidth = 1.0
         Generar.layer.borderColor = UIColor.white.cgColor
+        Generar.layer.cornerRadius = 10
+        Generar.clipsToBounds = true
         
         Seleccionar.isEnabled = false
         Seleccionar.layer.borderWidth = 1.0
         Seleccionar.layer.borderColor = UIColor.lightGray.cgColor
         Seleccionar.setTitleColor(UIColor.lightGray, for: .normal)
+        Seleccionar.layer.cornerRadius = 10
+        Seleccionar.clipsToBounds = true
         
         MenúPrincipal.layer.borderWidth = 1.0
         MenúPrincipal.layer.borderColor = UIColor.white.cgColor
+        MenúPrincipal.layer.cornerRadius = 10
+        MenúPrincipal.clipsToBounds = true
         
         cards = [A1, A2, A3, A4, B1, B2, B3, B4, C1, C2, C3, C4, D1, D2, D3, D4]
         
@@ -87,6 +110,12 @@ class JugadorViewController: UIViewController {
         }
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ViewController {
+            viewController.languageSwitch = language!
+        }
     }
     
     @IBAction func GenerarButton(_ sender: UIButton) {
@@ -120,7 +149,12 @@ class JugadorViewController: UIViewController {
             cards[i].isEnabled = true
         } // All button cards are enabled because the game starts if the button is hit
         
-        promptLabel.text = "Has elegido esta tabla.\nPresiona una cartita para marcarla."
+        if language == 1{
+            promptLabel.text = "You have chosen this table.\nPress a card to mark it."
+        }
+        else{
+            promptLabel.text = "Has elegido esta tabla.\nPresiona una cartita para marcarla."
+        }
         Generar.layer.borderColor = UIColor.lightGray.cgColor
         Generar.setTitleColor(UIColor.lightGray, for: .normal)
         Generar.isEnabled = false
@@ -148,7 +182,12 @@ class JugadorViewController: UIViewController {
             time -= 1
         }
         else if time == 1{
-            promptLabel.text = "Presiona una cartita para marcarla."
+            if language == 1{
+                promptLabel.text = "Press a card to mark it."
+            }
+            else{
+                promptLabel.text = "Presiona una cartita para marcarla."
+            }
             loteria()
             timerBean.invalidate()
             time = 0
@@ -162,7 +201,12 @@ class JugadorViewController: UIViewController {
             time -= 1
         }
         else if time == 1{
-            promptLabel.text = "Presiona una cartita para marcarla."
+            if language == 1{
+                promptLabel.text = "Press a card to mark it."
+            }
+            else{
+                promptLabel.text = "Presiona una cartita para marcarla."
+            }
             loteria()
             timerNoBean.invalidate()
             time = 0
@@ -171,13 +215,23 @@ class JugadorViewController: UIViewController {
     
     func displays(){
         if beanBools[index] == false{
-            promptLabel.text = "Colocando un frijol..."
+            if language == 1{
+                promptLabel.text = "Placing a bean..."
+            }
+            else{
+                promptLabel.text = "Colocando un frijol..."
+            }
             time = 2
             timerBean = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(JugadorViewController.frijol), userInfo: nil, repeats: true)
             beanBools[index] = true
         } // Bean will get displayed
         else{
-            promptLabel.text = "Retirando un frijol..."
+            if language == 1{
+                promptLabel.text = "Taking away a bean..."
+            }
+            else{
+                promptLabel.text = "Retirando un frijol..."
+            }
             time = 2
             timerNoBean = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(JugadorViewController.noFrijol), userInfo: nil, repeats: true)
             beanBools[index] = false
@@ -203,13 +257,23 @@ class JugadorViewController: UIViewController {
         var loteríaFlag: Bool = true // Flag determines if the user won the game
         for i in 0...15{
             if beanBools[i] == false{
-                promptLabel.text = "Presiona una cartita para marcarla."
+                if language == 1{
+                    promptLabel.text = "Press a card to mark it."
+                }
+                else{
+                    promptLabel.text = "Presiona una cartita para marcarla."
+                }
                 loteríaFlag = false
                 break
             }
         } // If one of the cards is not a bean card, then the flag is false and the user has not won yet
         if loteríaFlag{
-            promptLabel.text = "HAS COMPLETADO LA TABLA. \nGRITA ¡LOTERÍA!"
+            if language == 1{
+                promptLabel.text = "YOU HAVE COMPLETED THE TABLE.\nYELL LOTERÍA!"
+            }
+            else{
+                promptLabel.text = "HAS COMPLETADO LA TABLA.\nGRITA ¡LOTERÍA!"
+            }
         } // If all cards show the bean, then the flag is true and the user has won the game
         for i in 0...15{
             cards[i].isEnabled = true
