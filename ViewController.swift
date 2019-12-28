@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var Language: UISegmentedControl!
     
     var songPlayer = AVAudioPlayer()
+    var songCurrentTime: Double?
+    
     var languageSwitch: Int = 0
     
     override func viewDidLoad() {
@@ -30,6 +32,10 @@ class ViewController: UIViewController {
         }
         catch{
             print(error)
+        }
+        
+        if songCurrentTime != nil{
+            songPlayer.currentTime = songCurrentTime!
         }
         
         songPlayer.play()
@@ -71,13 +77,23 @@ class ViewController: UIViewController {
         if let jugadorViewController = segue.destination as? JugadorViewController {
             jugadorViewController.language = Language.selectedSegmentIndex
         }
+        if let GritónTutorial = segue.destination as? Grito_nTutorial {
+            GritónTutorial.language = Language.selectedSegmentIndex
+            GritónTutorial.songTime = songPlayer.currentTime
+        }
+        if let JugadorTutorial = segue.destination as? JugadorTutorial {
+            JugadorTutorial.language = Language.selectedSegmentIndex
+            JugadorTutorial.songTime = songPlayer.currentTime
+        }
     }
     
     @IBAction func GritónButton(_ sender: UIButton) {
         songPlayer.stop()
+        songCurrentTime = 0
     }
     @IBAction func JugadorButton(_ sender: UIButton) {
         songPlayer.stop()
+        songCurrentTime = 0
     }
     @IBAction func Language(_ sender: UISegmentedControl) {
         if Language.selectedSegmentIndex == 1{
@@ -95,4 +111,11 @@ class ViewController: UIViewController {
             Jugador.setTitle("Jugador", for: .normal)
         }
     }
+    @IBAction func GritónInformación(_ sender: UIButton) {
+        songPlayer.stop()
+    }
+    @IBAction func JugadorInformación(_ sender: Any) {
+        songPlayer.stop()
+    }
+    
 }

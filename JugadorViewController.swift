@@ -29,7 +29,6 @@ class JugadorViewController: UIViewController {
     @IBOutlet weak var D4: UIButton!
     
     
-    @IBOutlet weak var ObjetivoJugador: UILabel!
     @IBOutlet weak var promptLabel: UILabel!
     @IBOutlet weak var Generar: UIButton!
     @IBOutlet weak var Seleccionar: UIButton!
@@ -69,14 +68,12 @@ class JugadorViewController: UIViewController {
         }
         
         if language == 1{
-            ObjetivoJugador.text = "Game Mode: Player\nYour objective: you must generate a table and mark the cards drawn only when the Shouter announces them. You win the game when you mark your entire table and shout \"Lotería!\" Good luck!"
             promptLabel.text = "Generate a table and press \"select\" to start to play."
             Generar.setTitle("Generate", for: .normal)
             Seleccionar.setTitle("Select", for: .normal)
             MenúPrincipal.setTitle("Main Menu", for: .normal)
         }
         else{
-            ObjetivoJugador.text = "Modo de Juego: Jugador\nTu objetivo: debes generar una tabla y marcar las cartas extraídas solamente cuando el Gritón las anuncie. Ganas cuando marcas TODA tu tabla y gritas \"¡lotería!\" ¡Suerte!"
             promptLabel.text = "Genera una tabla y presiona \"seleccionar\" para empezar a jugar."
             Generar.setTitle("Generar", for: .normal)
             Seleccionar.setTitle("Seleccionar", for: .normal)
@@ -227,7 +224,7 @@ class JugadorViewController: UIViewController {
         } // Bean will get displayed
         else{
             if language == 1{
-                promptLabel.text = "Taking away a bean..."
+                promptLabel.text = "Removing a bean..."
             }
             else{
                 promptLabel.text = "Retirando un frijol..."

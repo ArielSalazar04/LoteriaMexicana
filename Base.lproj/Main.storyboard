@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sww-XI-nPc">
@@ -23,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lotería Mexicana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bj-Xj-N3w">
-                                <rect key="frame" x="37.666666666666657" y="92" width="300" height="43"/>
+                                <rect key="frame" x="37.666666666666657" y="65" width="300" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="OIx-T5-qJc"/>
                                     <constraint firstAttribute="height" constant="43" id="VVu-D8-ZCP"/>
@@ -33,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige un modo de juego:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwh-Uk-alz">
-                                <rect key="frame" x="47.666666666666657" y="560" width="280" height="28"/>
+                                <rect key="frame" x="47.666666666666657" y="533" width="280" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="1yB-nR-Gpj"/>
                                     <constraint firstAttribute="width" constant="280" id="tNR-0v-1jO"/>
@@ -43,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv8-oI-Fk1">
-                                <rect key="frame" x="132.66666666666666" y="619.66666666666663" width="110" height="40"/>
+                                <rect key="frame" x="132.66666666666666" y="592.66666666666663" width="110" height="40"/>
                                 <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BYZ-l5-QQp"/>
@@ -59,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rM-Um-UKA">
-                                <rect key="frame" x="132.66666666666666" y="675.66666666666663" width="110" height="40"/>
+                                <rect key="frame" x="132.66666666666666" y="648.66666666666663" width="110" height="40"/>
                                 <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="b1g-7k-GAj"/>
@@ -75,7 +73,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creado por: Ariel Salazar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-dr-3qt">
-                                <rect key="frame" x="87.666666666666686" y="142" width="200" height="20"/>
+                                <rect key="frame" x="87.666666666666686" y="115" width="200" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Z8Y-qP-CEh"/>
                                     <constraint firstAttribute="height" constant="20" id="nfS-38-TWb"/>
@@ -85,14 +83,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="fgP-NP-wp8">
-                                <rect key="frame" x="90" y="236" width="195" height="301"/>
+                                <rect key="frame" x="90" y="209" width="195" height="301"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="195" id="DU9-WJ-mCg"/>
                                     <constraint firstAttribute="height" constant="301" id="e4A-iC-ne8"/>
                                 </constraints>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ePq-uP-vdA">
-                                <rect key="frame" x="112.66666666666669" y="173.66666666666666" width="150" height="29"/>
+                                <rect key="frame" x="112.66666666666669" y="146.66666666666666" width="150" height="29"/>
                                 <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="cLF-o6-uFt"/>
@@ -108,6 +106,29 @@
                                     <action selector="LanguageSwitch:" destination="KoQ-tm-kaK" eventType="valueChanged" id="646-EU-1LW"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymy-o3-wJv">
+                                <rect key="frame" x="255" y="596" width="104" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.16110357642173767" green="0.090031333267688751" blue="0.030902562662959099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="How to play"/>
+                                <connections>
+                                    <action selector="GritónInformación:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egd-ho-Mhk"/>
+                                    <segue destination="M0y-iG-xkr" kind="show" id="XAA-20-A9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnQ-3i-XPW">
+                                <rect key="frame" x="255" y="652" width="104" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1548773708" green="0.086277414799999994" blue="0.03060906792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="How to play"/>
+                                <connections>
+                                    <action selector="GritónInformación:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPG-Ol-K50"/>
+                                    <action selector="JugadorInformación:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L54-xx-hu9"/>
+                                    <segue destination="aaZ-wr-0HU" kind="show" id="B99-EL-tpJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35350910258304913" green="0.80591687817258884" blue="0.47682380419483872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -128,6 +149,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DFM-zY-8tL"/>
                     <connections>
                         <outlet property="Creator" destination="Hpf-dr-3qt" id="gko-if-0X9"/>
                         <outlet property="Gamemode" destination="Hwh-Uk-alz" id="XLR-hy-mP9"/>
@@ -142,12 +164,288 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
         </scene>
+        <!--Grito n Tutorial-->
+        <scene sceneID="NUY-4O-tf6">
+            <objects>
+                <viewController id="M0y-iG-xkr" customClass="Grito_nTutorial" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqT-WP-iR3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Yzl-Me-CG8">
+                                <rect key="frame" x="-18" y="-2" width="412" height="814"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDy-r4-nCD">
+                                <rect key="frame" x="16" y="508" width="156" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1548773708" green="0.086277414799999994" blue="0.03060906792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PreviousButton:" destination="M0y-iG-xkr" eventType="touchUpInside" id="SuG-WJ-KZK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4T-Zo-29z">
+                                <rect key="frame" x="97" y="653" width="180" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.171812198" green="0.087368211969999998" blue="0.024147814019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Menú Principal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Lm-m7-EeP"/>
+                                    <action selector="MenuButton:" destination="M0y-iG-xkr" eventType="touchUpInside" id="bSF-tg-u59"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="8mG-z5-K7m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7i-jj-OEx">
+                                <rect key="frame" x="37" y="345" width="301" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnA-br-Kf2">
+                                <rect key="frame" x="203" y="507" width="156" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.15487737083798137" green="0.086277414797524557" blue="0.030609067921987858" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="→">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextButton:" destination="M0y-iG-xkr" eventType="touchUpInside" id="GK5-Lu-LP8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instrucciones para Gritón" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDn-nh-hB8">
+                                <rect key="frame" x="16" y="123" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carta anterior" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2P-eN-naz">
+                                <rect key="frame" x="172" y="293" width="146" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siguiente carta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAx-jg-af3">
+                                <rect key="frame" x="172" y="266" width="146" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WV-cu-Aor">
+                                <rect key="frame" x="56" y="239" width="106" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Empezar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmpezarButton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="fan-rF-7iw"/>
+                                    <action selector="GritónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umO-y4-rwf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpk-eW-pbP">
+                                <rect key="frame" x="56" y="266" width="106" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Siguiente">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjs-YM-NeH"/>
+                                    <action selector="SiguienteBotton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="bZ3-UO-6Uc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1I-DU-X4h">
+                                <rect key="frame" x="56" y="293" width="106" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Detrás">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="DetrásButton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="Gv8-h9-PwZ"/>
+                                    <action selector="GritónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="amk-E1-XGe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Empezar el juego" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4b-n3-1Xx">
+                                <rect key="frame" x="172" y="239" width="146" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Cka-pg-GUf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oBR-Ny-H7Y"/>
+                    <connections>
+                        <outlet property="DetrásButton" destination="J1I-DU-X4h" id="5lp-05-dRL"/>
+                        <outlet property="DetrásDescription" destination="p2P-eN-naz" id="YP6-c2-3JQ"/>
+                        <outlet property="EmpezarButton" destination="7WV-cu-Aor" id="By5-5D-XdK"/>
+                        <outlet property="EmpezarDescription" destination="i4b-n3-1Xx" id="eDZ-qZ-rkU"/>
+                        <outlet property="GuideTextBox" destination="o7i-jj-OEx" id="nxC-dL-E3D"/>
+                        <outlet property="InstructionsTitle" destination="HDn-nh-hB8" id="rhd-Eq-c39"/>
+                        <outlet property="LeftArrow" destination="oDy-r4-nCD" id="77D-ny-kAF"/>
+                        <outlet property="MenuButton" destination="Q4T-Zo-29z" id="Twy-X7-5y6"/>
+                        <outlet property="RightArrow" destination="cnA-br-Kf2" id="hpO-Eq-Pbc"/>
+                        <outlet property="SiguienteButton" destination="Rpk-eW-pbP" id="aKl-ZZ-Syf"/>
+                        <outlet property="SiguienteDescription" destination="PAx-jg-af3" id="6Ga-q2-qUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G25-ld-L0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125.5999999999999" y="22.906403940886701"/>
+        </scene>
+        <!--Jugador Tutorial-->
+        <scene sceneID="gIh-lc-Xff">
+            <objects>
+                <viewController id="aaZ-wr-0HU" customClass="JugadorTutorial" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1qz-VM-iBg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gex-F4-rBU">
+                                <rect key="frame" x="-18" y="-2" width="412" height="814"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeX-aD-esg">
+                                <rect key="frame" x="97" y="653" width="180" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.171812198" green="0.087368211969999998" blue="0.024147814019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Menú Principal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnT-2T-kgR"/>
+                                    <action selector="MenuButton:" destination="aaZ-wr-0HU" eventType="touchUpInside" id="75u-6H-VP1"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="HUM-WC-I9X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggj-ow-Zki">
+                                <rect key="frame" x="16" y="510" width="156" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1548773708" green="0.086277414799999994" blue="0.03060906792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="←">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PreviousButton:" destination="aaZ-wr-0HU" eventType="touchUpInside" id="Lbf-Jl-bxo"/>
+                                    <action selector="PreviousButton:" destination="M0y-iG-xkr" eventType="touchUpInside" id="Pjz-3H-WMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiH-uw-nbG">
+                                <rect key="frame" x="203" y="509" width="156" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1548773708" green="0.086277414799999994" blue="0.03060906792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <state key="normal" title="→">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextButton:" destination="M0y-iG-xkr" eventType="touchUpInside" id="b41-Fh-U5B"/>
+                                    <action selector="NextButton:" destination="aaZ-wr-0HU" eventType="touchUpInside" id="yzc-Bn-VRu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC8-AY-H8T">
+                                <rect key="frame" x="37" y="345" width="301" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instrucciones para Jugador" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKt-lp-3Qi">
+                                <rect key="frame" x="10" y="124" width="355" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cq-Ny-KHv">
+                                <rect key="frame" x="38" y="247" width="112" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Generar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmpezarButton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="5Ir-Qy-KEf"/>
+                                    <action selector="GritónButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iit-LW-PCk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US6-94-8XD">
+                                <rect key="frame" x="38" y="286" width="112" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Seleccionar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="JugadorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="by8-Y9-WDd"/>
+                                    <action selector="SiguienteBotton:" destination="7XU-w7-uLN" eventType="touchUpInside" id="Yta-ym-XBY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seleccionar la tabla" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="417-RE-AwB">
+                                <rect key="frame" x="176" y="286" width="160" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Generar una tabla" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qS-S4-KXQ">
+                                <rect key="frame" x="176" y="247" width="146" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fAC-dV-a8X"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YGK-G8-SGG"/>
+                    <connections>
+                        <outlet property="GenerarButton" destination="7Cq-Ny-KHv" id="z8b-Ym-HXU"/>
+                        <outlet property="GenerarDescription" destination="4qS-S4-KXQ" id="Abe-ZK-dKf"/>
+                        <outlet property="InformationBox" destination="fC8-AY-H8T" id="ync-0E-GcJ"/>
+                        <outlet property="JugadorTitleInstructions" destination="gKt-lp-3Qi" id="Vew-Py-ZLD"/>
+                        <outlet property="LeftArrow" destination="ggj-ow-Zki" id="rUo-W7-spQ"/>
+                        <outlet property="MenuButton" destination="qeX-aD-esg" id="YeX-DT-abW"/>
+                        <outlet property="RightArrow" destination="aiH-uw-nbG" id="b0a-Wa-T1t"/>
+                        <outlet property="SeleccionarButton" destination="US6-94-8XD" id="h93-Tj-olT"/>
+                        <outlet property="SeleccionarDescription" destination="417-RE-AwB" id="r5t-b7-Zsz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NoM-Fk-udJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="812.807881773399"/>
+        </scene>
         <!--Jugador View Controller-->
         <scene sceneID="PR4-Ry-yZ0">
             <objects>
                 <viewController id="SsR-4b-YoD" customClass="JugadorViewController" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zq1-BZ-nv2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="BsT-8x-6u6">
@@ -298,14 +596,6 @@
                                     <action selector="D4Button:" destination="SsR-4b-YoD" eventType="touchUpInside" id="8Jx-Lb-51L"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCd-Up-Rnf">
-                                <rect key="frame" x="16" y="79" width="343" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Tu objetivo: debes generar una tabla y marcar las cartas extraídas solamente cuando el Gritón las anuncie. Ganas cuando marcas TODA tu tabla y gritas "¡lotería!" ¡Suerte!</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-EZ-9An">
                                 <rect key="frame" x="50" y="623" width="125" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -331,9 +621,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genera una tabla y presiona &quot;seleccionar&quot; para empezar a jugar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P09-B6-OHg">
-                                <rect key="frame" x="60" y="167" width="255" height="40"/>
+                                <rect key="frame" x="16" y="82" width="343" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -354,6 +644,7 @@
                         <color key="backgroundColor" red="0.38881295919418335" green="0.81025069952011108" blue="0.47962355613708496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="nX8-SG-v9d"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Cj5-ET-H9U"/>
                     <connections>
                         <outlet property="A1" destination="neb-Ad-mrq" id="MDC-J0-yRK"/>
                         <outlet property="A2" destination="RQO-rK-ZLx" id="hYp-wd-gKX"/>
@@ -373,7 +664,6 @@
                         <outlet property="D4" destination="NYu-Ea-Mbj" id="VZw-0J-Sut"/>
                         <outlet property="Generar" destination="5eQ-EZ-9An" id="a1b-W9-n5B"/>
                         <outlet property="MenúPrincipal" destination="64d-ny-9GS" id="Coe-3y-Flm"/>
-                        <outlet property="ObjetivoJugador" destination="eCd-Up-Rnf" id="2AC-Mi-RHT"/>
                         <outlet property="Seleccionar" destination="my7-3L-c7X" id="X2f-hy-LfW"/>
                         <outlet property="promptLabel" destination="P09-B6-OHg" id="EyP-6M-8bk"/>
                     </connections>
@@ -387,7 +677,7 @@
             <objects>
                 <viewController id="7XU-w7-uLN" customClass="Grito_nViewController" customModule="Loteria_Mexicana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8qY-mp-dck">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Brk-wT-iMw">
@@ -399,7 +689,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17123115062713623" green="0.08752768486738205" blue="0.020695900544524193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Previous">
+                                <state key="normal" title="Detrás">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -421,7 +711,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="RGE-go-cOR">
-                                <rect key="frame" x="86" y="275" width="203" height="298.00000000000023"/>
+                                <rect key="frame" x="64" y="224" width="247" height="363"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9S-GC-I82">
@@ -437,22 +727,11 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="4x2-Ma-LIM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGK-XB-Sml">
-                                <rect key="frame" x="16" y="82" width="343" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="bad-af-pXu"/>
-                                    <constraint firstAttribute="width" constant="343" id="rEh-vD-Sqv"/>
-                                </constraints>
-                                <string key="text">Tu objetivo: Debes gritar el nombre de todas las 54 cartas que aparezcán en el marco. Para empezar el juego, dale al botón de "empezar". Para la siguiente carta, dale al "siguiente" y para la previa, dale a "detrás". ¡Disfruta del juego!</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48O-38-3Ud">
-                                <rect key="frame" x="112" y="228" width="150" height="36"/>
+                                <rect key="frame" x="86" y="119" width="203" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17123115059999999" green="0.087527684869999997" blue="0.020695900539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <state key="normal" title="Empezar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -463,18 +742,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.38881295919418335" green="0.81025069952011108" blue="0.47962355613708496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="aGK-XB-Sml" firstAttribute="centerX" secondItem="8qY-mp-dck" secondAttribute="centerX" id="rzh-HQ-l3F"/>
-                            <constraint firstItem="aGK-XB-Sml" firstAttribute="centerY" secondItem="8qY-mp-dck" secondAttribute="centerY" constant="-261.5" id="vVq-Y2-Tnx"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8uM-Uw-voC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tob-uI-ZmR"/>
                     <connections>
                         <outlet property="CardPlaceholder" destination="RGE-go-cOR" id="jdE-Ow-gdf"/>
                         <outlet property="Detras" destination="8nF-Bd-hq2" id="0pm-aK-wHI"/>
                         <outlet property="Empezar" destination="48O-38-3Ud" id="fas-zv-LMs"/>
                         <outlet property="MenuPrincipal" destination="N9S-GC-I82" id="aoH-jk-Ohg"/>
-                        <outlet property="ObjetivoGritón" destination="aGK-XB-Sml" id="Bqu-U3-Keo"/>
                         <outlet property="Siguiente" destination="JNU-Gg-F20" id="heG-Ic-zHg"/>
                     </connections>
                 </viewController>
@@ -489,6 +764,6 @@
         <image name="AppBackground" width="389" height="789"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4x2-Ma-LIM"/>
+        <segue reference="l2g-1M-FCM"/>
     </inferredMetricsTieBreakers>
 </document>

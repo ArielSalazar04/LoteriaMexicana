@@ -9,8 +9,6 @@
 import UIKit
 
 class Grito_nViewController: UIViewController {
-
-    @IBOutlet weak var ObjetivoGritón: UILabel!
     @IBOutlet weak var Empezar: UIButton!
     @IBOutlet weak var CardPlaceholder: UIImageView!
     @IBOutlet weak var Detras: UIButton!
@@ -25,14 +23,12 @@ class Grito_nViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if language == 1{
-            ObjetivoGritón.text = "Game Mode: Shouter\nYour objective: You must shout the name of all 54 cards that will appear in the frame. To start the game, hit the \"start\" button. For the next card, hit \"next\" and for the previous one, hit \"previous\". \nEnjoy the game!"
             Empezar.setTitle("Start", for: .normal)
             Detras.setTitle("Previous", for: .normal)
             Siguiente.setTitle("Next", for: .normal)
             MenuPrincipal.setTitle("Main Menu", for: .normal)
         }
         else{
-            ObjetivoGritón.text = "Modo de Juego: Gritón\nTu objetivo: Debes gritar el nombre de todas las 54 cartas que aparezcán en el marco. Para empezar el juego, dale al botón de \"empezar\". Para la siguiente carta, dale al \"siguiente\" y para la previa, dale a \"detrás\". ¡Disfruta del juego!"
             Empezar.setTitle("Empezar", for: .normal)
             Detras.setTitle("Detrás", for: .normal)
             Siguiente.setTitle("Siguiente", for: .normal)
